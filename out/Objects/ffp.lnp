@@ -1,0 +1,14 @@
+--cpu Cortex-M0
+".\objects\main.o"
+".\objects\adc.o"
+".\objects\uart.o"
+".\objects\key.o"
+".\objects\display.o"
+".\objects\led.o"
+".\objects\temp.o"
+".\objects\startup_lpc11xx.o"
+".\objects\system_lpc11xx.o"
+--strict --scatter ".\Objects\ffp.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ffp.map" -o .\Objects\ffp.axf

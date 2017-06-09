@@ -1,0 +1,95 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.20.0.0
+Copyright (C) 2016 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: m q, a, LIC=NQQGK-ZRJ88-ML3CI-TC45J-R07Q6-HNNQF
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.20
+Toolchain Path:  D:\MDK520\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 2 (build 183)
+Assembler:       Armasm.exe V5.06 update 2 (build 183)
+Linker/Locator:  ArmLink.exe V5.06 update 2 (build 183)
+Library Manager: ArmAr.exe V5.06 update 2 (build 183)
+Hex Converter:   FromElf.exe V5.06 update 2 (build 183)
+CPU DLL:         SARMCM3.DLL V5.20
+Dialog DLL:      DARMCM1.DLL V1.14.0.0
+Target DLL:      Segger\JL2CM3.dll V2.99.20.0
+Dialog DLL:      TARMCM1.DLL V1.10.0.0
+ 
+<h2>Project:</h2>
+C:\ffp\out\ffp.uvprojx
+Project File Date:  06/09/2017
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 2 (build 183)', folder: 'D:\MDK520\ARM\ARMCC\Bin'
+Rebuild target 'final project'
+compiling ADC.c...
+..\src\ADC.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\src\ADC.c: 1 warning, 0 errors
+compiling Uart.c...
+..\src\UART.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\src\Uart.c: 1 warning, 0 errors
+compiling main.c...
+..\src\ADC.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\src\KEY.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\src\UART.h(13): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\src\main.c(26): warning:  #223-D: function "tem" declared implicitly
+    temp= tem(ADC_GetData());
+..\src\main.c: 4 warnings, 0 errors
+compiling LED.c...
+compiling Display.c...
+compiling Key.c...
+..\src\KEY.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\src\Key.c: 1 warning, 0 errors
+compiling Temp.c...
+assembling startup_LPC11xx.s...
+compiling system_LPC11xx.c...
+linking...
+.\Objects\ffp.axf: Error: L6200E: Symbol ADC_Init multiply defined (by temp.o and adc.o).
+.\Objects\ffp.axf: Error: L6200E: Symbol ADCFlag multiply defined (by temp.o and adc.o).
+Not enough information to list image symbols.
+Not enough information to list the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+".\Objects\ffp.axf" - 2 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.5.0.pack
+                ARM::CMSIS:CORE:4.3.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 4.3.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.LPC1100_DFP.1.4.0.pack
+                Keil::Device:Startup:1.0.0
+                NXP LPC1100 Series Device Support
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  C:\ffp\out\RTE
+  D:\MDK520\ARM\CMSIS\4.5.0\CMSIS\Include
+  D:\MDK520\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:4.3.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device\Source\ARM\startup_LPC11xx.s
+      Source file:   Device\Source\system_LPC11xx.c
+Target not created.
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
