@@ -42,25 +42,22 @@ compiling main.c...
   #endif
 ..\src\UART.h(13): warning:  #1-D: last line of file ends without a newline
   #endif
-..\src\main.c(26): warning:  #223-D: function "tem" declared implicitly
-    temp= tem(ADC_GetData());
-..\src\main.c: 4 warnings, 0 errors
+..\src\main.c: 3 warnings, 0 errors
 compiling LED.c...
 compiling Display.c...
 compiling Key.c...
 ..\src\KEY.h(8): warning:  #1-D: last line of file ends without a newline
   #endif
 ..\src\Key.c: 1 warning, 0 errors
-compiling Temp.c...
 assembling startup_LPC11xx.s...
+compiling Temp.c...
+..\src\adc.h(10): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\src\Temp.c: 1 warning, 0 errors
 compiling system_LPC11xx.c...
 linking...
-.\Objects\ffp.axf: Error: L6200E: Symbol ADC_Init multiply defined (by temp.o and adc.o).
-.\Objects\ffp.axf: Error: L6200E: Symbol ADCFlag multiply defined (by temp.o and adc.o).
-Not enough information to list image symbols.
-Not enough information to list the image map.
-Finished: 2 information, 0 warning and 2 error messages.
-".\Objects\ffp.axf" - 2 Error(s), 7 Warning(s).
+Program Size: Code=8112 RO-data=400 RW-data=32 ZI-data=632  
+".\Objects\ffp.axf" - 0 Error(s), 7 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -86,10 +83,9 @@ Package Vendor: Keil
    * Component: ARM::CMSIS:CORE:4.3.0
 
    * Component: Keil::Device:Startup:1.0.0
-      Source file:   Device\Source\ARM\startup_LPC11xx.s
       Source file:   Device\Source\system_LPC11xx.c
-Target not created.
-Build Time Elapsed:  00:00:05
+      Source file:   Device\Source\ARM\startup_LPC11xx.s
+Build Time Elapsed:  00:00:03
 </pre>
 </body>
 </html>

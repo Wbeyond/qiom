@@ -23,7 +23,7 @@ int main (void)
 	KEY_Init();
 	while(1)
 	{
-  temp= tem(ADC_GetData());
+  temp=Res_To_Temp(ADC_To_Res(ADC_GetData()));
 	if(chance==0) temp=temp*1.8+32;
 	for(i=0;i<1000;i++)
 		LED_Display(temp);

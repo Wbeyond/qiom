@@ -9,3 +9,4 @@
 .\objects\temp.o: D:\MDK520\Keil\LPC1100_DFP\1.4.0\Device\Include\LPC11xx\system_LPC11xx.h
 .\objects\temp.o: D:\MDK520\ARM\ARMCC\Bin\..\include\stdio.h
 .\objects\temp.o: D:\MDK520\ARM\ARMCC\Bin\..\include\string.h
+.\objects\temp.o: ..\src\adc.h

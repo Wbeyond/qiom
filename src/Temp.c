@@ -1,6 +1,7 @@
 #include "Temp.h"
+#include"adc.h"
 uint32_t  ulADCBuf;
-uint32_t  ADCFlag;
+extern uint32_t  ADCFlag;
 uint32_t  ulADCData; 
 
 /********************************************************************************
@@ -9,7 +10,7 @@ uint32_t  ulADCData;
 * EntryParameter : None
 * ReturnValue    : None
 ********************************************************************************/
-void ADC_Init( void )
+/*void ADC_Init( void )
 {                                                             
     LPC_SYSCON->SYSAHBCLKCTRL |= (1 << 16);                   
     LPC_IOCON->R_PIO1_0 &= ~0xBF;	//配置PIO1_0为模拟输入模式 
@@ -26,8 +27,8 @@ void ADC_Init( void )
 }
 
 
-
-uint32_t ADC_To_Res(uint32_t adc_value)
+*/
+uint32_t ADC_To_Res(uint32_t ulADCData)
 {
 
   uint32_t res_value;//电阻
@@ -90,7 +91,7 @@ uint32_t Res_To_Temp(uint32_t res_value)
 		temp = ((249600-res_value)/k)-40;
 	}
 
-	return(temp+10);   //
+	return(temp);   //
 }
 
 uint32_t TempC_To_TempF(uint32_t temp)
